@@ -1,0 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    @apply bg-hero-pattern bg-cover bg-center min-h-screen bg-fixed;
+  }
