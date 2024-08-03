@@ -20,6 +20,7 @@ const SignUp = () => {
 
     const response = await fetch('http://fabula.great-site.net/register.php', {
       method: 'POST',
+      mode: 'no-cors',
       headers: {
         'Content-Type': 'application/json',
       },
