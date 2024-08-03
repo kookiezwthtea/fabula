@@ -16,7 +16,7 @@ const ManageUsers = () => {
 
   const fetchUsers = async () => {
     try {
-      const response = await axios.get('http://localhost/story-app/backend/userManagement.php');
+      const response = await axios.get('http://fabula.great-site.net/userManagement.php');
       setUsers(response.data);
     } catch (error) {
       console.error('Error fetching users:', error);
@@ -26,7 +26,7 @@ const ManageUsers = () => {
   const handleAddUser = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('http://localhost/story-app/backend/userManagement.php', {
+      const response = await axios.post('http://fabula.great-site.net/userManagement.php', {
         user,
         email,
         password,
@@ -47,7 +47,7 @@ const ManageUsers = () => {
   const handleEditUser = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.put('http://localhost/story-app/backend/userManagement.php', {
+      const response = await axios.put('http://fabula.great-site.net/userManagement.php', {
         user: editUser,
         email,
         password,
@@ -68,7 +68,7 @@ const ManageUsers = () => {
 
   const handleDeleteUser = async (user) => {
     try {
-      const response = await axios.delete('http://localhost/story-app/backend/userManagement.php', {
+      const response = await axios.delete('http://fabula.great-site.net/userManagement.php', {
         data: { user },
       });
       if (response.data.success) {
@@ -94,7 +94,7 @@ const ManageUsers = () => {
   const [isAdmin, setIsAdmin] = useState(false);
 
     useEffect(() => {
-        fetch('http://localhost/story-app/backend/addStory.php', {
+        fetch('http://fabula.great-site.net/addStory.php', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
