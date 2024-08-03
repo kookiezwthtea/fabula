@@ -9,7 +9,7 @@ const Dashboard = () => {
   useEffect(() => {
     const fetchUserData = async () => {
       try {
-        const response = await fetch('http://localhost/story-app/backend/user_data.php', {
+        const response = await fetch('http://fabula.great-site.net/user_data.php', {
           method: 'GET',
           credentials: 'include',
         });
@@ -27,7 +27,7 @@ const Dashboard = () => {
 
     const fetchFavorites = async () => {
       try {
-        const response = await fetch('http://localhost/story-app/backend/favouriteStory.php', {
+        const response = await fetch('http://fabula.great-site.net/favouriteStory.php', {
           method: 'GET',
           credentials: 'include',
         });
