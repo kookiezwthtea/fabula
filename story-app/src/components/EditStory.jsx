@@ -18,7 +18,7 @@ const EditStory = () => {
   useEffect(() => {
     const fetchStory = async () => {
       try {
-        const response = await fetch('http://localhost/story-app/backend/editStory.php', {
+        const response = await fetch('http://fabula.great-site.net/editStory.php', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
@@ -55,7 +55,7 @@ const EditStory = () => {
     setError(null);
 
     try {
-      const response = await fetch('http://localhost/story-app/backend/editStory.php', {
+      const response = await fetch('http://fabula.great-site.net/editStory.php', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
