@@ -16,14 +16,14 @@ const Homepage = () => {
     const fetchData = async () => {
       try {
         // Fetch all stories
-        const storiesResponse = await fetch('http://localhost/story-app/backend/getAllStories.php');
+        const storiesResponse = await fetch('http://fabula.great-site.net/getAllStories.php');
         if (!storiesResponse.ok) throw new Error('Failed to fetch stories');
         const storiesData = await storiesResponse.json();
         setStories(storiesData);
 
         // Fetch favorites if logged in
         try {
-          const favoritesResponse = await fetch('http://localhost/story-app/backend/favouriteStory.php', {
+          const favoritesResponse = await fetch('http://fabula.great-site.net/favouriteStory.php', {
             method: 'GET',
             credentials: 'include',
           });
@@ -68,8 +68,8 @@ const Homepage = () => {
 
     const isFavorited = favorites[storyId];
     const url = isFavorited
-      ? 'http://localhost/story-app/backend/unfavouriteStory.php'
-      : 'http://localhost/story-app/backend/favouriteStory.php';
+      ? 'http://fabula.great-site.net/unfavouriteStory.php'
+      : 'http://fabula.great-site.net/favouriteStory.php';
 
     try {
       const response = await fetch(url, {
