@@ -8,7 +8,7 @@ const Stories = () => {
   const [message, setMessage] = useState({});
 
   useEffect(() => {
-    fetch(`http://localhost/story-app/backend/categories.php?category=${categoryName}`)
+    fetch(`http://fabula.great-site.net/categories.php?category=${categoryName}`)
       .then(response => response.json())
       .then(data => setStories(data))
       .catch(error => console.error('Error fetching stories:', error));
