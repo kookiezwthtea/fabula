@@ -18,7 +18,7 @@ const SignUp = () => {
         return;
       }
 
-    const response = await fetch('http://localhost/story-app/backend/register.php', {
+    const response = await fetch('http://fabula.great-site.net/register.php', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
