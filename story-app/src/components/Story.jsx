@@ -10,7 +10,7 @@ const Story = () => {
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    fetch(`http://localhost/story-app/backend/getStory.php?story_id=${id}`)
+    fetch(`http://fabula.great-site.net/getStory.php?story_id=${id}`)
       .then(response => {
         if (!response.ok) {
           throw new Error('Network response was not ok');
