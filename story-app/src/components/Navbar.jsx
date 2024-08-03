@@ -10,7 +10,7 @@ const Navbar = () => {
 
   const checkSession = async () => {
     try {
-      const response = await fetch('http://localhost/story-app/backend/session_status.php', {
+      const response = await fetch('http://fabula.great-site.net/session_status.php', {
         method: 'GET',
         credentials: 'include',
       });
@@ -38,7 +38,7 @@ const Navbar = () => {
 
   const handleLogout = async () => {
     try {
-      const response = await fetch('http://localhost/story-app/backend/logout.php', {
+      const response = await fetch('http://fabula.great-site.net/logout.php', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
