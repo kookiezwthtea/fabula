@@ -7,7 +7,7 @@ const AdminPanel = () => {
     const [isAdmin, setIsAdmin] = useState(false);
 
     useEffect(() => {
-        fetch('http://localhost/story-app/backend/addStory.php', {
+        fetch('http://fabula.great-site.net/addStory.php', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
