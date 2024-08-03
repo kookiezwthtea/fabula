@@ -13,7 +13,7 @@ const Login = () => {
     setError(null);
 
     try {
-      const response = await fetch('http://localhost/story-app/backend/login.php', {
+      const response = await fetch('http://fabula.great-site.net/login.php', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
