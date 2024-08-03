@@ -21,7 +21,7 @@ const AddStory = () => {
     ];
 
     useEffect(() => {
-        fetch('http://localhost/story-app/backend/addStory.php', {
+        fetch('http://fabula.great-site.net/addStory.php', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
@@ -53,7 +53,7 @@ const AddStory = () => {
         if (source) formData.append('source', source);
     
         try {
-            const response = await fetch('http://localhost/story-app/backend/addStory.php', {
+            const response = await fetch('http://fabula.great-site.net/addStory.php', {
                 method: 'POST',
                 body: formData,
                 credentials: 'include',
