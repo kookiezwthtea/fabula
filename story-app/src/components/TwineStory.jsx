@@ -11,7 +11,7 @@ const TwineStory = () => {
   useEffect(() => {
     const fetchStory = async () => {
       try {
-        const response = await fetch(`http://localhost/story-app/backend/fetchOneStory.php?id=${id}`);
+        const response = await fetch(`http://fabula.great-site.net/fetchOneStory.php?id=${id}`);
         if (!response.ok) {
           throw new Error('Network response was not ok');
         }
