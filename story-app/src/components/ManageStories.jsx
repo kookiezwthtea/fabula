@@ -12,7 +12,7 @@ const ManageStories = () => {
   useEffect(() => {
     const checkAdminStatus = async () => {
       try {
-        const response = await fetch('http://localhost/story-app/backend/addStory.php', {
+        const response = await fetch('http://fabula.great-site.net/addStory.php', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
@@ -39,7 +39,7 @@ const ManageStories = () => {
   useEffect(() => {
     const fetchStories = async () => {
       try {
-        const response = await fetch('http://localhost/story-app/backend/getAllStories.php');
+        const response = await fetch('http://fabula.great-site.net/getAllStories.php');
         if (!response.ok) throw new Error('Failed to fetch stories');
         const data = await response.json();
         setStories(data);
@@ -56,7 +56,7 @@ const ManageStories = () => {
   const handleDelete = async (id) => {
     if (window.confirm('Are you sure you want to delete this story?')) {
       try {
-        const response = await fetch('http://localhost/story-app/backend/deleteStory.php', {
+        const response = await fetch('http://fabula.great-site.net/deleteStory.php', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
