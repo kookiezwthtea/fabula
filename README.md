@@ -1,7 +1,7 @@
-Interactive Story App
+##Interactive Story App
 This is an interactive story application built with React for the frontend and PHP for the backend. The app allows users to navigate through stories and make choices that affect the outcome of the narrative.
 
-Features
+##Features
 Interactive Stories: Users can choose their own paths in stories, creating a unique experience each time.
 Dynamic Story Management: Stories, segments, and choices are managed dynamically through a database.
 Twine Integration: The app can display stories created with Twine, allowing for rich and complex narratives.
